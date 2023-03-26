@@ -119,7 +119,7 @@ public:
 	//基础PDDE算法+个体编码长度可变策略+启发式算法初始种群+邻域搜索策略，随机规划模型
 	void Call_PDDE_Variable_Heuristic_Neighborhood(int jobscase, int stagescase, int machinescase, Result& result);
 
-	/****************************************调用主算法的函数，确定性模型****************************************/
+	/****************************************调用主算法的函数：确定性模型****************************************/
 	//基础PDDE算法+个体编码长度可变策略+启发式算法初始种群+邻域搜索策略，确定性模型，把需求固定
 	void Call_PDDE_Variable_Heuristic_Neighborhood_determine_demand(int jobscase, int stagescase, int machinescase, int avgdemand, Result& result);
 	//基础PDDE算法+个体编码长度可变策略+启发式算法初始种群+邻域搜索策略，确定性模型，把加工时间固定
