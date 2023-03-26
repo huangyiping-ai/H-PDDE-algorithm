@@ -28,8 +28,7 @@ int _tmain(int argc, _TCHAR* argv[])
 				for (int l = 0; l < 10; l++)
 				{
 					PDDE::Result result;
-					Small_Case->Call_Heuristic(jobslist[i], stageslist[j], machineslist[k], result);//分派规则和VND结合的启发式算法
-					//Small_Case->Call_PDDE(jobslist[i], stageslist[j], machineslist[k], result);//PDDE算法
+					Small_Case->Call_PDDE(jobslist[i], stageslist[j], machineslist[k], result);//PDDE算法
 					message.push_back(result);
 				}
 
@@ -94,8 +93,7 @@ int _tmain(int argc, _TCHAR* argv[])
 
 					vector<PDDE::Result> resultlist(Large_Case->Demand_Upper - Large_Case->Demand_Lower+1);
 					for (int n = 0; n <= Large_Case->Demand_Upper - Large_Case->Demand_Lower; n++)
-						Large_Case->Call_Heuristic(jobslist[i] + Large_Case->Demand_Lower + n, stageslist[j], machineslist[k], resultlist[n]);//分派规则和VND结合的启发式算法
-						//Large_Case->Call_PDDE(jobslist[i] + Large_Case->Demand_Lower + n, stageslist[j], machineslist[k], resultlist[n]);//PDDE算法
+						Large_Case->Call_PDDE(jobslist[i] + Large_Case->Demand_Lower + n, stageslist[j], machineslist[k], resultlist[n]);//PDDE算法
 
 					stop = clock();//结束计时
 					double sum_computingtime = (double)(stop - start) / CLOCKS_PER_SEC;//计算时间

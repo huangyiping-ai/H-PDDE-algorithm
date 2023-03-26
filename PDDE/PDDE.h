@@ -106,22 +106,8 @@ public:
 	Individual Find_Neighborhood(int structure, vector<int> x);//寻找某种邻域结构产生的最优个体
 
 	/****************************************调用主算法的函数，随机规划模型****************************************/
-	//分派规则和VND结合的启发式算法
-	void Call_Heuristic(int jobscase, int stagescase, int machinescase, Result& result);
 	//基础PDDE算法
 	void Call_PDDE(int jobscase, int stagescase, int machinescase, Result& result);
-	//基础PDDE算法+个体编码长度可变策略
-	void Call_PDDE_Variable(int jobscase, int stagescase, int machinescase, Result& result);
-	//基础PDDE算法+个体编码长度可变策略+邻域搜索策略
-	void Call_PDDE_Variable_Neighborhood(int jobscase, int stagescase, int machinescase, Result& result);
-	//基础PDDE算法+个体编码长度可变策略+启发式算法初始种群
-	void Call_PDDE_Variable_Heuristic(int jobscase, int stagescase, int machinescase, Result& result);
 	//基础PDDE算法+个体编码长度可变策略+启发式算法初始种群+邻域搜索策略，随机规划模型
 	void Call_PDDE_Variable_Heuristic_Neighborhood(int jobscase, int stagescase, int machinescase, Result& result);
-
-	/****************************************调用主算法的函数：确定性模型****************************************/
-	//基础PDDE算法+个体编码长度可变策略+启发式算法初始种群+邻域搜索策略，确定性模型，把需求固定
-	void Call_PDDE_Variable_Heuristic_Neighborhood_determine_demand(int jobscase, int stagescase, int machinescase, int avgdemand, Result& result);
-	//基础PDDE算法+个体编码长度可变策略+启发式算法初始种群+邻域搜索策略，确定性模型，把加工时间固定
-	void Call_PDDE_Variable_Heuristic_Neighborhood_determine_processtime(int jobscase, int stagescase, int machinescase, int avgprocesstime, Result& result);
 };

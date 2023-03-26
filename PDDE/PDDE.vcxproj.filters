@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main_Heuristic_or_PDDE.cpp">
+    <ClCompile Include="main_PDDE.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="pch.cpp">
@@ -24,10 +24,7 @@
     <ClCompile Include="PDDE.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="main_PDDE+Strategy.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="main_SP_or_determine.cpp">
+    <ClCompile Include="main_H-PDDE.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
