@@ -103,7 +103,7 @@ int _tmain(int argc, _TCHAR* argv[])
 				{
 					PDDE::Result result;
 					//基础PDDE算法+个体编码长度可变策略+启发式算法初始种群+邻域搜索策略，即H-PDDE
-					//Large_Case->Call_PDDE_Variable_Heuristic_Neighborhood(jobslist[i], stageslist[j], machineslist[k], result);
+					Large_Case->Call_PDDE_Variable_Heuristic_Neighborhood(jobslist[i], stageslist[j], machineslist[k], result);
 					message.push_back(result);
 				}
 				
